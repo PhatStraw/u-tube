@@ -1,26 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { Grid } from '@material-ui/core'
+import VideoList from './components/VideoList.js'
+import SearchBar from './components/SearchBar.js'
+import Content from './components/Content.js'
+import youtube from './api/Youtube.js'
+
+
+class App extends React.Component{
+  handleSubmit = async(searchTerm) => {
+    const response = await youtube.get('search', {
+      params: {
+        part: "snippet",
+        maxResults: 5,
+        key: "AIzaSyBKVJdARAImJB3NJdjg1wGoVMoAaF-6gws",
+        q: searchTerm,
+    }
+    })
+    console.log(response)
+  }
+  
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid justify="center" container spacing={10}>
+        <Grid item xs={12}>
+          <Grid container spacing={10}>
+
+            <Grid item xs={12}>
+                <SearchBar onFormSubmit={this.handleSubmit}/>
+            </Grid>
+
+            <Grid item xs={8}>
+              <Content />
+            </Grid>
+
+            <Grid item xs={4}>
+              <VideoList />
+            </Grid>
+
+          </Grid>
+        </Grid>
+      </Grid>
+      
     </div>
   );
+  }
 }
 
 export default App;
