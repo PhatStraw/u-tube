@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/u-tube/static/css/main.2680dfa7.chunk.css",
-    "main.js": "/u-tube/static/js/main.1b7b10ba.chunk.js",
-    "main.js.map": "/u-tube/static/js/main.1b7b10ba.chunk.js.map",
+    "main.js": "/u-tube/static/js/main.9ad4aee1.chunk.js",
+    "main.js.map": "/u-tube/static/js/main.9ad4aee1.chunk.js.map",
     "runtime-main.js": "/u-tube/static/js/runtime-main.99f26de7.js",
     "runtime-main.js.map": "/u-tube/static/js/runtime-main.99f26de7.js.map",
     "static/js/2.2aaf51b3.chunk.js": "/u-tube/static/js/2.2aaf51b3.chunk.js",
     "static/js/2.2aaf51b3.chunk.js.map": "/u-tube/static/js/2.2aaf51b3.chunk.js.map",
     "index.html": "/u-tube/index.html",
-    "precache-manifest.3a0ab37273c91701ee8cfca5e7215780.js": "/u-tube/precache-manifest.3a0ab37273c91701ee8cfca5e7215780.js",
+    "precache-manifest.232a777c451f5e24b3f10467c340ba2f.js": "/u-tube/precache-manifest.232a777c451f5e24b3f10467c340ba2f.js",
     "service-worker.js": "/u-tube/service-worker.js",
     "static/css/main.2680dfa7.chunk.css.map": "/u-tube/static/css/main.2680dfa7.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.99f26de7.js",
     "static/js/2.2aaf51b3.chunk.js",
     "static/css/main.2680dfa7.chunk.css",
-    "static/js/main.1b7b10ba.chunk.js"
+    "static/js/main.9ad4aee1.chunk.js"
   ]
 }
